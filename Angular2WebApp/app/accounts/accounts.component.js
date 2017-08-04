@@ -12,7 +12,15 @@ var core_1 = require('@angular/core');
 var AccountComponent = (function () {
     function AccountComponent() {
         this.header = 'My Account';
+        this.firstName = 'Nguyễn Đình';
+        this.lastName = 'Khánh';
+        this.a = 11;
+        this.b = 22;
+        this.imageURL = '../../images/demo-image.jpg';
     }
+    AccountComponent.prototype.GetName = function () {
+        return this.firstName + ' ' + this.lastName;
+    };
     AccountComponent = __decorate([
         core_1.Component({
             selector: 'my-acc',
